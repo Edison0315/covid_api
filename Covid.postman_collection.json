@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "df873987-b761-4275-bf70-b7a897d23644",
+		"name": "Covid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - All people",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/api/people/all",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"people",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Person by id_del_caso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/api/people/1556979",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"people",
+						"1556979"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - All people in table",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/api/people?genero=F&estado=Leve&ciudad=CALI",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"api",
+						"people"
+					],
+					"query": [
+						{
+							"key": "genero",
+							"value": "F"
+						},
+						{
+							"key": "estado",
+							"value": "Leve"
+						},
+						{
+							"key": "ciudad",
+							"value": "CALI"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
